@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #647299;
+
+}
+
+.container {
+    text-align: center;
+}
+
+.calc {
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.display {
+    background: #181F32;
+    color: white;
+    height: 100px;
+    text-align: right;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 30px;
+    margin-bottom: 20px;
+    width: calc(4 * 70px + 3 * 15px + 40px); 
+}
+
+.buttons {
+    background-color: #252D44;
+    padding: 45px;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 70px);
+    grid-gap: 15px;
+}
+
+.btn {
+    background-color: #EAE3DB;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    padding: 20px;
+    color: #000;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+.del, .reset {
+    background-color: #647299;
+    color: #fff;
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    text-align: center;
+}
+
+.equal {
+    background-color: #D13F30;
+    color: #fff;
+}
+
+.reset{
+    grid-column: span 2;
+}
+
+.equal{
+    grid-column: span 2;
+}
+
+
